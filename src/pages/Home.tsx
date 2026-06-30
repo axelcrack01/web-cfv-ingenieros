@@ -180,8 +180,8 @@ export default function Home() {
 
           <div className="hidden lg:flex flex-col gap-3">
             {[
-              { label: "+100 proyectos", sub: "ejecutados con éxito en la región" },
-              { label: "+15 años de experiencia", sub: "en ingeniería y construcción" },
+              { label: "+20 proyectos", sub: "ejecutados con éxito en la región" },
+              { label: "+5 años de experiencia", sub: "en ingeniería y construcción" },
               { label: "Sector público y privado", sub: "clientes en toda Latinoamérica" },
               { label: "Equipo multidisciplinario", sub: "ingenieros, arquitectos y especialistas" },
             ].map((badge) => (
