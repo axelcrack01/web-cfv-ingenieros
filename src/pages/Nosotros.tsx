@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router";
 import { ArrowRight, CheckCircle2, Target, Eye, Heart } from "lucide-react";
 import PageHero from "../components/PageHero";
-
+import carlosflores from "../../imagenes/carlosflores.png";
 // ─── Data ────────────────────────────────────────────────────────────────────
 
 const VALORES = [
@@ -13,26 +13,23 @@ const VALORES = [
 ];
 
 const HISTORIA = [
-  { year: "2009", title: "Fundación", desc: "ConstructuraCFV nace en Lima con un equipo de 5 ingenieros civiles especializados en infraestructura vial." },
-  { year: "2012", title: "Expansión regional", desc: "Apertura de operaciones en Colombia y Ecuador. Primer proyecto de más de USD 5M: Vía expresa Norte, Bogotá." },
-  { year: "2015", title: "Certificación ISO 9001", desc: "Obtención de la certificación de calidad internacional y lanzamiento de la unidad de Gestión de Proyectos PMI." },
-  { year: "2018", title: "Desarrollo inmobiliario", desc: "Creación de la unidad de Desarrollo Inmobiliario. Primer complejo residencial premium en Santiago de Chile." },
-  { year: "2021", title: "Tecnología BIM", desc: "Adopción total de metodología BIM Level 2 en todos los proyectos. Más de 60 proyectos ejecutados." },
-  { year: "2024", title: "Hoy: Liderazgo", desc: "Más de 100 proyectos, 50 clientes y presencia en 6 países de Latinoamérica. Referentes del sector." },
+  { year: "2019", title: "Fundación", desc: "ConstructuraCFV nace en Lima con un equipo de 5 ingenieros civiles especializados en infraestructura vial." },
+  { year: "2020", title: "Expansión regional", desc: "Apertura de operaciones en Colombia y Ecuador. Primer proyecto de más de USD 5M: Vía expresa Norte, Bogotá." },
+  { year: "2021", title: "Certificación ISO 9001", desc: "Obtención de la certificación de calidad internacional y lanzamiento de la unidad de Gestión de Proyectos PMI." },
+  { year: "2022", title: "Desarrollo inmobiliario", desc: "Creación de la unidad de Desarrollo Inmobiliario. Primer complejo residencial premium en Santiago de Chile." },
+  { year: "2023", title: "Tecnología BIM", desc: "Adopción total de metodología BIM Level 2 en todos los proyectos. Más de 60 proyectos ejecutados." },
+  { year: "2024", title: "Hoy: Liderazgo", desc: "Más de 20 proyectos, 20 clientes y presencia en 3 países de Latinoamérica. Referentes del sector." },
 ];
 
 const EQUIPO = [
-  { name: "Ing. Marco Villanueva", role: "Gerente General & Fundador", img: "photo-1472099645785-5658abf4ff4e", exp: "25 años de experiencia" },
-  { name: "Arq. Claudia Fuentes", role: "Directora de Proyectos", img: "photo-1573496359142-b8d87734a5a2", exp: "18 años de experiencia" },
-  { name: "Ing. Rafael Torres", role: "Director de Obras Civiles", img: "photo-1560250097-0b93528c311a", exp: "20 años de experiencia" },
-  { name: "Ing. Ana Cristina Paz", role: "Jefa de Supervisión Técnica", img: "photo-1580489944761-15a19d654956", exp: "15 años de experiencia" },
+  { name: "Ing. Carlos Flores", role: "Gerente General & Fundador", img: carlosflores, exp: "25 años de experiencia" },
 ];
 
 const STATS = [
-  { value: 15, suffix: "+", label: "Años de experiencia" },
-  { value: 100, suffix: "+", label: "Proyectos ejecutados" },
-  { value: 50, suffix: "+", label: "Clientes satisfechos" },
-  { value: 98, suffix: "%", label: "Cumplimiento de plazos" },
+  { value: 5, suffix: "+", label: "Años de experiencia" },
+  { value: 20, suffix: "+", label: "Proyectos ejecutados" },
+  { value: 20, suffix: "+", label: "Clientes satisfechos" },
+  { value: 99, suffix: "%", label: "Cumplimiento de plazos" },
 ];
 
 function useCountUp(target: number, duration: number, active: boolean) {
